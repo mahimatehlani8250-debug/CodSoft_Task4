@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>🎬 AI Movie Recommendation System</h1>
+        <p>Discover Movies Based On Your Interests</p>
+    </div>
+
+    <div class="controls">
+
+        <button onclick="toggleDarkMode()" class="dark-btn">
+            🌙 Dark Mode
+        </button>
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="🔍 Search Movie..."
+        >
+
+        <button onclick="startVoiceSearch()">
+            🎤 Voice Search
+        </button>
+
+    </div>
+
+    <div class="recommend-section">
+
+        <h2>Select Your Favorite Genre</h2>
+
+        <select id="genre">
+            <option value="">Choose Genre</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select>
+
+        <button onclick="recommendMovie()">
+            Get Recommendations
+        </button>
+
+    </div>
+
+    <div id="stats"></div>
+
+    <div id="suggestions"></div>
+
+    <div id="result" class="movies"></div>
+
+    <div class="history-section">
+        <h2>📜 Recommendation History</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <div class="favorites-section">
+        <h2>❤️ Favorite Movies</h2>
+        <ul id="favoriteList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
